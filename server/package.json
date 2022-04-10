@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
