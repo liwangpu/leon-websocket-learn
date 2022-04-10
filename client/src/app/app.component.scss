@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+    div.buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

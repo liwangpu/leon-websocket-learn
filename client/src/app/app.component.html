@@ -1,0 +1,24 @@
+<div class="buttons">
+    <nz-button-group>
+        <button nz-button nzType="primary" (click)="connect()" [disabled]="connected">重新连接</button>
+        <button nz-button nzType="primary" nzDanger (click)="closeConnect()">断开连接</button>
+    </nz-button-group>
+</div>
+
+<form nz-form nzLayout="inline" [formGroup]="form">
+    <nz-form-item>
+        <nz-form-label nzFor="email">消息内容</nz-form-label>
+        <nz-form-control>
+            <input type="text" nz-input placeholder="请输入消息内容" formControlName="message" />
+        </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-control>
+            <nz-button-group>
+                <button nz-button (click)="generateMessage()">随机消息</button>
+                <button nz-button nzType="primary" (click)="sendMessage()" [disabled]="!connected">发送消息</button>
+            </nz-button-group>
+        </nz-form-control>
+    </nz-form-item>
+</form>

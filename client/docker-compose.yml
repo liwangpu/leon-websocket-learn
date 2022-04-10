@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+
+  ng11app:
+    container_name: ng11app-c
+    build: ./image
+    ports:
+      - "7654:80"
